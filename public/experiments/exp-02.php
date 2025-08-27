@@ -14,7 +14,7 @@
 // Combination of A-Z, 0-9 and _
 
 // OLD STYLE
-define("CONSTANT_NAME",1234);
+define("CONSTANT_NAME", 1234);
 
 // NEW STYLE
 const GRAVITY = 9.8; // m/s/s

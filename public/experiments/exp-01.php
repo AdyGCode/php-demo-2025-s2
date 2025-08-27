@@ -38,7 +38,6 @@ $fullname = "{$given_name} {$family_name}";
 $fullname2 = "$given_name $family_name";
 
 
-
 ?>
 <!-- ! TAB gives the HTML base code -->
 <!doctype html>
@@ -52,17 +51,17 @@ $fullname2 = "$given_name $family_name";
 </head>
 <body>
 <div class="flex flex-col gap-4">
-<?php
-echo '<h1>Experiment 01</h1>';
-echo "<pre>{$count}</pre>";
-echo "<pre>{$name}</pre>";
-echo "<pre>{$total_cost}</pre>";
-echo "<pre>{$family_name}</pre>";
-echo "<pre>{$given_name}</pre>";
-echo "<pre>{$fullname}</pre>";
-echo "<pre>{$full_name}</pre>";
-echo "<pre>{$fullname2}</pre>";
-?>
+    <?php
+    echo '<h1>Experiment 01</h1>';
+    echo "<pre>{$count}</pre>";
+    echo "<pre>{$name}</pre>";
+    echo "<pre>{$total_cost}</pre>";
+    echo "<pre>{$family_name}</pre>";
+    echo "<pre>{$given_name}</pre>";
+    echo "<pre>{$fullname}</pre>";
+    echo "<pre>{$full_name}</pre>";
+    echo "<pre>{$fullname2}</pre>";
+    ?>
     <p>Long way to display variable within HTML</p>
     <pre><?php echo $fullname2; ?></pre>
     <p>Shortcut display variable within HTML</p>

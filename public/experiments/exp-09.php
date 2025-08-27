@@ -52,7 +52,7 @@ require_once $base_path . "/resources/templates/header.php";
 ?>
 <main>
     <header>
-        <h2>Categories </h2>
+        <h2><a href="exp-07.php">Categories</a></h2>
     </header>
 
     <article>
@@ -60,15 +60,15 @@ require_once $base_path . "/resources/templates/header.php";
             <h3>Category Details</h3>
         </header>
         <section>
-                <?php if ($rowCount > 0 && isset($category)) : ?>
-            <table class="table">
-                <thead>
-                <tr>
-                    <th class="w-32 text-left"></th>
-                    <th class="text-left">Value</th>
-                </tr>
-                </thead>
-                <tbody>
+            <?php if ($rowCount > 0 && isset($category)) : ?>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="w-32 text-left"></th>
+                        <th class="text-left">Value</th>
+                    </tr>
+                    </thead>
+                    <tbody>
                     <tr>
                         <th class="w-32 text-left">ID</th>
                         <td><?= $category->id ?></td>
@@ -81,17 +81,17 @@ require_once $base_path . "/resources/templates/header.php";
                         <th class="w-32 text-left">Description</th>
                         <td><?= $category->description ?></td>
                     </tr>
-                </tbody>
-                <tfoot>
-                <tr>
-                    <td colspan="3">
-                    </td>
-                </tr>
-                </tfoot>
-            </table>
-                <?php else: ?>
-                        <p class="">Category not found</p>
-                <?php endif ?>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="3">
+                        </td>
+                    </tr>
+                    </tfoot>
+                </table>
+            <?php else: ?>
+                <p class="">Category not found</p>
+            <?php endif ?>
         </section>
     </article>
 </main>

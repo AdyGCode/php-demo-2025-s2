@@ -64,7 +64,7 @@ require_once $base_path . "/resources/templates/header.php";
 ?>
 <main>
     <header>
-        <h2>Categories</h2>
+        <h2><a href="exp-07.php">Categories</a></h2>
     </header>
 
     <?php
@@ -72,7 +72,7 @@ require_once $base_path . "/resources/templates/header.php";
         ?>
         <section>
             <?php
-            foreach($errors as $error=>$message) :
+            foreach ($errors as $error => $message) :
                 ?>
                 <p><?= $message ?></p>
             <?php

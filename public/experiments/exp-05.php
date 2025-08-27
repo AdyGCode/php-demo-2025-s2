@@ -20,7 +20,7 @@
  Include the settings.php file contained in the /app/ folder
 */
 
-include __DIR__."/../../app/settings.php";
+include __DIR__ . "/../../app/settings.php";
 
 echo "<p>Do other things</p>";
 

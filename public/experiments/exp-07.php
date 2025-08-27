@@ -48,7 +48,7 @@ require_once $base_path . "/resources/templates/header.php";
 ?>
 <main>
     <header>
-        <h2> Categories </h2>
+        <h2><a href="exp-07.php">Categories</a></h2>
     </header>
 
     <article>
@@ -59,7 +59,7 @@ require_once $base_path . "/resources/templates/header.php";
             </p>
         </header>
         <section>
-<!--            table>(thead>tr>th*3)+(tbody>tr>td*3)+(tfoot>tr>td) -->
+            <!--            table>(thead>tr>th*3)+(tbody>tr>td*3)+(tfoot>tr>td) -->
             <table>
                 <thead>
                 <tr>
