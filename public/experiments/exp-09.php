@@ -32,6 +32,9 @@ if (isset($_GET['id'])) {
 
     $category = $statement->fetch(PDO::FETCH_OBJ);
     $rowCount = $statement->rowCount();
+} else {
+    header('Location: /');
+    exit(0);
 }
 
 ?>
@@ -50,7 +53,12 @@ if (isset($_GET['id'])) {
 // Read the header from the templates
 require_once $base_path . "/resources/templates/header.php";
 ?>
-<main>
+
+<main class="min-h-192 flex flex-col gap-8
+             container grow w-full overflow-hidden
+             px-6 mx-auto
+             bg-white text-gray-700">
+
     <header>
         <h2><a href="exp-07.php">Categories</a></h2>
     </header>

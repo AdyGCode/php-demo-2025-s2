@@ -17,6 +17,7 @@ global $pdo, $base_path;
 require_once __DIR__ . "/../../app/settings.php";
 require_once $base_path . "/app/database.php";
 
+
 if (!empty($_GET)) {
 
     $old_id = (int)($_GET['id'] ?? 0);
@@ -30,6 +31,9 @@ if (!empty($_GET)) {
     $old_id = (int)$category->id;
     $old_title = $category->title;
     $old_description = $category->description;
+} else {
+    header('Location: /');
+    exit(0);
 }
 
 if (isset($_POST) && count($_POST) > 0) {
@@ -99,7 +103,12 @@ if (isset($_POST) && count($_POST) > 0) {
 <?php
 require_once $base_path . "/resources/templates/header.php";
 ?>
-<main>
+
+<main class="min-h-192 flex flex-col gap-8
+             container grow w-full overflow-hidden
+             px-6 mx-auto
+             bg-white text-gray-700">
+
     <header>
         <h2><a href="exp-07.php">Categories</a></h2>
     </header>

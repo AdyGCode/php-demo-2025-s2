@@ -62,8 +62,12 @@ if (isset($_POST) && count($_POST) > 0) {
 <?php
 require_once $base_path . "/resources/templates/header.php";
 ?>
-<main>
-    <header>
+<main class="min-h-192 flex flex-col gap-8
+             container grow w-full overflow-hidden
+             px-6 mx-auto
+             bg-white text-gray-700">
+
+<header>
         <h2><a href="exp-07.php">Categories</a></h2>
     </header>
 
