@@ -33,13 +33,17 @@ Add following node modules:
 - @tailwindcss/forms
 - @tailwindcss/vite
 - concurrently - this allows the CLI to execute multiple commands simultaneously)
+- vite-plugin-php - allows vite to scan the PHP files for tailwind css
 
 ```shell
 touch src/style.css
-npm i vite 
+npm i --save-dev vite 
 npm i @fortawesome/fontawesome-free
-npm i tailwindcss @tailwindcss/forms @tailwindcss/vite
-npm i concurrently
+npm i --save-dev tailwindcss 
+npm i --save-dev @tailwindcss/forms
+npm i --save-dev @tailwindcss/vite 
+npm i --save-dev vite-plugin-php
+npm i --save-dev concurrently
 ```
 
 Create and edit the src/style.css file and add:

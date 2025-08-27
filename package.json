@@ -10,10 +10,11 @@
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.10",
-    "@tailwindcss/vite": "^4.1.11",
+    "@tailwindcss/vite": "^4.1.12",
     "concurrently": "^9.2.1",
-    "tailwindcss": "^4.1.11",
-    "vite": "^7.0.6"
+    "tailwindcss": "^4.1.12",
+    "vite": "^7.0.6",
+    "vite-plugin-php": "^2.0.3"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.0"

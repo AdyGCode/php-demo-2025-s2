@@ -21,6 +21,7 @@
  * require_once     as per require, BUT file inserted ONE TIME ONLY
  */
 
+global $base_path;
 require_once __DIR__ . "/../../app/settings.php";
 ?>
 <!doctype html>
@@ -29,6 +30,10 @@ require_once __DIR__ . "/../../app/settings.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $_ENV["APP_NAME"]; ?></title>
+
+    <!-- Only use the CDN when developing and no access to Vite -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
 <?php
